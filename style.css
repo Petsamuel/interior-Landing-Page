@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Inter:wght@300;400;500&family=Lato:wght@900&family=Lora:wght@500&family=Montserrat&display=swap");
+
+* {
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --photo1: url("./assets/photo1.png");
+  --photo2: url("./assets/photo2.png");
+  --menu: url("./assets/icon-menu.svg");
+  --menu-close: url("./assets/icon-menu.svg");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #181719;
+  color: #ffff;
+}
+
+header {
+  margin: 2em;
+
+}
+
+nav {
+  display: flex;
+    width:100%;
+  justify-content: space-between;
+  
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li > a {
+  color: white;
+  font-family: "Montserrat";
+  padding:20px;
+}
+.active, a:active:focus{
+    border-bottom: 1px solid white;
+   
+}
+
+
+.hero-text {
+  font-family: "Lora";
+}
+.hero-paragraph>p{
+    padding:40px 0px;
+}
+
+.nav-icon {
+  display: none;
+  visibility: hidden;
+}
+.list-items{
+    display: flex;
+    justify-content: flex-end;
+    width:90%;
+  }
+
+.nav-brand > p {
+  font-family: "Crimson Pro";
+  border: 2px solid #fff;
+  padding: 0.5em;
+}
+
+main {
+  padding: 2em;
+}
+.wrapper{
+    display:flex;
+    align-items: center;
+    gap:6px;
+}
+.col-2 {
+  padding: 25px 0px;
+}
+.photo1 {
+  content: var(--photo1);
+  width: 100%;
+}
+.photo2 {
+  content: var(--photo2);
+  width: 15%;
+  border-radius: 50%;;
+}
+.first-col {
+  display: flex;
+  padding:3em auto;
+  align-items: flex-start;
+  gap:20px
+}
+.card-container{
+width: 300px;
+height: 138px;
+background: #181719;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: -6em 2em 0em auto;
+padding:1.5rem;
+position: relative;
+}
+.position{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+
+
+color: #828282;
+}
+.name{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+}
+footer > p {
+    /* position: absolute; */
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #a9a9a9;
+    bottom:0px;
+    
+  }
+  .box-text{
+    padding-top:15px;
+
+    width: 287px;
+height: 62px;
+left: 947px;
+top: 815px;
+
+font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+  }
+.read_more:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 450px), (max-width: 750px) {
+    .wrapper{
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+  ul {
+    display: block;
+    background-color: #181719;
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0px;
+    z-index:10px;
+   
+  }
+  .list-items{
+    display:none;
+  }
+  ul li{
+margin:15vh auto;
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+  }
+  .box-text{
+    padding-top:15px;
+    width: 210px;
+height: 45px;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+  }
+
+  .nav-icon {
+    content: var(--menu);
+    z-index: 100;
+    display:block;
+    cursor: pointer;
+    position:absolute;
+    right:40px;
+    visibility: visible;
+  }
+  .nav-close{
+    content:var(--menu-close);
+    z-index: 100;
+    display:block;
+    cursor: pointer;
+    position:absolute;
+    right:40px;
+    visibility: visible;
+  }
+
+  .hero-text > p {
+    width: 274px;
+    height: 46px;
+    left: 12px;
+    top: 88px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+   
+  }
+  .hero-paragraph {
+    width: 250px;
+   
+    left: 12px;
+    top: 159px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+.hero-paragraph>p{
+    padding:40px 0px;
+}
+  .card-container {
+    width: max-content;
+    height: 138px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: -4em auto;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .photo2 {
+    content: var(--photo2);
+    width: 20%;
+    border-radius: 100%;
+  }
+  .inner-card-container {
+    padding: 10px;
+  }
+
+}
