@@ -1,6 +1,5 @@
-$(".nav-icon").click(function (e) { 
+$("#mobile-menu").click(function (e) { 
     $(".list-items").toggle("");
-   $("#mobile-menu").toggleClass("nav-icon nav-close");
-    
-    
+$("#mobile-menu").toggleClass("nav-icon nav-close");
+
 });
