@@ -56,6 +56,7 @@ li > a {
 }
 .hero-text {
   font-family: "Lora";
+  
 }
 .hero-paragraph>p{
     padding:40px 0px;
@@ -87,6 +88,9 @@ main {
     align-items: center;
     gap:4em;
     
+}
+.col-1{
+  margin-top:5em;
 }
 .col-2 {
   padding: 25px 0px;
